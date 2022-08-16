@@ -46,4 +46,5 @@ for f in files.iterdir():
     df = pd.DataFrame(dict)
     file_name = os.path.basename(str(f))
     # writing the GPS coordinate data in the form of a CSV file. 
+    # this CSV file will then be merged with the CSV file containing the average number of tents detected in each second of the video. 
     df.to_csv(r"C:\Users\navee\Desktop\YOLOV5\GPS CSV\Output" + str(file_name) + ".csv", index = False)
